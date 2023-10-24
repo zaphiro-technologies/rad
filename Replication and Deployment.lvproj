@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="14008000">
+<Project Type="Project" LVVersion="20008000">
 	<Property Name="CCSymbols" Type="Str"></Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
@@ -30,7 +30,6 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Replication and Deployment Utility.vi" Type="VI" URL="../Replication and Deployment Utility.vi"/>
-		<Item Name="Replication and Deployment.aliases" Type="Document" URL="../Replication and Deployment.aliases"/>
 		<Item Name="source" Type="Folder">
 			<Item Name="project" Type="Folder">
 				<Item Name="_Open VI FP.vi" Type="VI" URL="../project/_Open VI FP.vi"/>
@@ -308,7 +307,11 @@
 					<Item Name="Set UnzipSelect File Date Time.vi" Type="VI" URL="../subVIs/Zip/Set UnzipSelect File Date Time.vi"/>
 					<Item Name="SetPathInZip.vi" Type="VI" URL="../subVIs/Zip/SetPathInZip.vi"/>
 					<Item Name="UnzipSelectFiles.vi" Type="VI" URL="../subVIs/Zip/UnzipSelectFiles.vi"/>
-					<Item Name="Open or Replace Zip File.vi" Type="VI" URL="../../rad_16_0_source/subVIs/Zip/Open or Replace Zip File.vi"/>
+					<Item Name="Open or Replace Zip File.vi" Type="VI" URL="../subVIs/Zip/Open or Replace Zip File.vi"/>
+				</Item>
+				<Item Name="log" Type="Folder">
+					<Item Name="add log.vi" Type="VI" URL="../subVIs/log/add log.vi"/>
+					<Item Name="make string one-line.vi" Type="VI" URL="../subVIs/log/make string one-line.vi"/>
 				</Item>
 				<Item Name="rad_Button and Menu Status.vi" Type="VI" URL="../subVIs/rad_Button and Menu Status.vi"/>
 				<Item Name="rad_Globals.vi" Type="VI" URL="../subVIs/rad_Globals.vi"/>
@@ -423,6 +426,8 @@
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -430,22 +435,24 @@
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="CRI Get Remote cRIO Backplane Info.vi" Type="VI" URL="/../&lt;userlib&gt;/_CRI/CRI Get Remote cRIO Backplane Info.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="RAD Application" Type="EXE">
 				<Property Name="App_INI_aliasGUID" Type="Str">{7D14A81A-E53C-4998-B1C4-A9ACCEE9DDDE}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{AA07335B-8AD4-48AC-937C-281A67E33F5C}</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{3BE514FF-1FF4-400A-A73A-71161C9C329F}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">RAD Application</Property>
-				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Builds/RAD</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{486A52BE-31E2-4D34-8023-C82BB52A7B36}</Property>
+				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
+				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
 				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RAD.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Builds/RAD/RAD.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
@@ -455,7 +462,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Builds/RAD</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{95F44F49-C3F8-4B6F-8DBF-3267CEE3E099}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FEA8B611-6DD8-4F6B-9B78-4B90C04121A9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Replication and Deployment Utility.vi</Property>
@@ -483,13 +490,14 @@
 				<Property Name="Source[6].itemID" Type="Ref">/My Computer/source/subVIs</Property>
 				<Property Name="Source[6].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
-				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">RAD Application</Property>
+				<Property Name="TgtF_companyName" Type="Str">Zaphiro Technlogies SA</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">RAD Application with log</Property>
 				<Property Name="TgtF_internalName" Type="Str">RAD Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 NI Systems Engineering</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 Zaphiro Technlogies</Property>
 				<Property Name="TgtF_productName" Type="Str">Replication And Deployment Utility</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{E3B51CED-D1AB-4FB4-AB3B-5919B2F7418B}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">RAD.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RAD Installer" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">project</Property>
@@ -509,10 +517,10 @@
 				<Property Name="Destination[3].tag" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
 				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str"></Property>
-				<Property Name="DistPart[0].productID" Type="Str">{BFD30583-3F24-4A38-BC2E-91186A97BAB7}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2014</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{4722F14B-8434-468D-840D-2B0CD8CBD5EA}</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{BD841C5A-94E5-4DA5-9505-2B90212D19C1}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 f1</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{D84FC73F-D1E0-4C05-A30C-DB882CD1ABD8}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[1].productID" Type="Str">{9DAB9252-81A5-4578-A7EC-EC62002294D0}</Property>
 				<Property Name="DistPart[1].productName" Type="Str">NI System Configuration Runtime 16.0.0</Property>
@@ -525,12 +533,12 @@
 				<Property Name="INST_productName" Type="Str">NI Replication And Deployment Utility 16.0</Property>
 				<Property Name="INST_productVersion" Type="Str">16.0.0</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">14000000</Property>
+				<Property Name="InstSpecVersion" Type="Str">20018007</Property>
 				<Property Name="MSI_arpCompany" Type="Str">National Instruments</Property>
 				<Property Name="MSI_arpPhone" Type="Str">800-433-3488</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://www.ni.com/</Property>
 				<Property Name="MSI_distID" Type="Str">{52AD4A24-F514-43F7-9255-56027306A503}</Property>
-				<Property Name="MSI_osCheck" Type="Int">4</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{D7F8FDD3-3404-4289-BF88-38D3D5725D82}</Property>
 				<Property Name="MSI_windowMessage" Type="Str">This installer will place the Replication And Deployment Utility in the National Instruments folder and add a shortcut to the Start Menu.</Property>
 				<Property Name="MSI_windowTitle" Type="Str">Welcome to the NI Replication And Deployment Utility Installer</Property>
