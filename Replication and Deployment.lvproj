@@ -37,6 +37,7 @@
 			</Item>
 			<Item Name="subVIs" Type="Folder">
 				<Item Name="App Images" Type="Folder">
+					<Property Name="NI.SortType" Type="Int">0</Property>
 					<Item Name="Deploy App Images" Type="Folder">
 						<Item Name="RIOSystemReplication" Type="Folder">
 							<Item Name="Download Bitfile Dynamic.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/RIOSystemReplication/Download Bitfile Dynamic.vi"/>
@@ -46,15 +47,15 @@
 							<Item Name="Set RIO Device Settings Dynamic.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/RIOSystemReplication/Set RIO Device Settings Dynamic.vi"/>
 						</Item>
 						<Item Name="rad_Check Bitfile for AutoRun.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Bitfile for AutoRun.vi"/>
-						<Item Name="rad_Check Image RT-INI For AutoRun.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Image RT-INI For AutoRun.vi"/>
 						<Item Name="rad_Check Firmware.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Firmware.vi"/>
+						<Item Name="rad_Check IF LinuxRT.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check IF LinuxRT.vi"/>
+						<Item Name="rad_Check Image RT-INI For AutoRun.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Image RT-INI For AutoRun.vi"/>
 						<Item Name="rad_Deploy All Bitfiles.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy All Bitfiles.vi"/>
 						<Item Name="rad_Deploy Application Image.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Application Image.vi"/>
 						<Item Name="rad_Deploy Image Wrapper_FB.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Image Wrapper_FB.vi"/>
 						<Item Name="rad_Deploy Images in Parallel.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Images in Parallel.vi"/>
 						<Item Name="rad_Deploy Images with Progress.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Images with Progress.vi"/>
 						<Item Name="rad_Deployment Error Handler.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deployment Error Handler.vi"/>
-						<Item Name="rad_Check IF LinuxRT.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check IF LinuxRT.vi"/>
 						<Item Name="rad_Detect NIAuth.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Detect NIAuth.vi"/>
 						<Item Name="rad_Discover Bitfiles In Image Zip.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Discover Bitfiles In Image Zip.vi"/>
 						<Item Name="rad_Enable FPGA.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Enable FPGA.vi"/>
@@ -83,17 +84,17 @@
 						<Item Name="rad_Convert Item Strings to FPGA Properties.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Convert Item Strings to FPGA Properties.vi"/>
 						<Item Name="rad_Create AppImage Info File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Create AppImage Info File.vi"/>
 						<Item Name="rad_Create AppImage ZIP File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Create AppImage ZIP File.vi"/>
+						<Item Name="rad_Find App Img File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Find App Img File.vi"/>
 						<Item Name="rad_Get Image Save Location.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Get Image Save Location.vi"/>
 						<Item Name="rad_GetInstalledSoftware.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_GetInstalledSoftware.vi"/>
 						<Item Name="rad_Input App Image Properties Dialog.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Input App Image Properties Dialog.vi"/>
+						<Item Name="rad_Merge AppImage Properties.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Merge AppImage Properties.vi"/>
 						<Item Name="rad_Modify AppImage Files.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Modify AppImage Files.vi"/>
 						<Item Name="rad_PackageImage.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_PackageImage.vi"/>
 						<Item Name="rad_Retrieve Application Image From Target.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve Application Image From Target.vi"/>
 						<Item Name="rad_Retrieve Image Wrapper.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve Image Wrapper.vi"/>
 						<Item Name="rad_Retrieve RAD AppImage Properties from Target.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve RAD AppImage Properties from Target.vi"/>
 						<Item Name="rad_Retrieve SysCfg AppImage Properties from Target.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve SysCfg AppImage Properties from Target.vi"/>
-						<Item Name="rad_Merge AppImage Properties.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Merge AppImage Properties.vi"/>
-						<Item Name="rad_Find App Img File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Find App Img File.vi"/>
 						<Item Name="rad_Select App Image Inheritance Dialog.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Select App Image Inheritance Dialog.vi"/>
 					</Item>
 					<Item Name="TypeDefs" Type="Folder">
@@ -114,6 +115,7 @@
 					<Item Name="rad_Configure App Images Settings Dialog.vi" Type="VI" URL="../subVIs/App Images/rad_Configure App Images Settings Dialog.vi"/>
 					<Item Name="rad_Configure Application Image.vi" Type="VI" URL="../subVIs/App Images/rad_Configure Application Image.vi"/>
 					<Item Name="rad_Format Application Images Information.vi" Type="VI" URL="../subVIs/App Images/rad_Format Application Images Information.vi"/>
+					<Item Name="rad_FTP Check log folder size on Target.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Check log folder size on Target.vi"/>
 					<Item Name="rad_FTP Delete File Wrapper.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Delete File Wrapper.vi"/>
 					<Item Name="rad_FTP Get File Wrapper.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Get File Wrapper.vi"/>
 					<Item Name="rad_FTP Put File Wrapper.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Put File Wrapper.vi"/>
