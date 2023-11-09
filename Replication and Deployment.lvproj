@@ -470,7 +470,7 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{486A52BE-31E2-4D34-8023-C82BB52A7B36}</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">RAD.exe</Property>
@@ -482,7 +482,7 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Builds/RAD</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FEA8B611-6DD8-4F6B-9B78-4B90C04121A9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{52B5D797-D64A-4C78-93E5-1C3BFCAB7BD2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Replication and Deployment Utility.vi</Property>
