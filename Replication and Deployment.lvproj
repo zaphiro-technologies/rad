@@ -297,6 +297,7 @@
 					<Item Name="Increment IP Address.vi" Type="VI" URL="../subVIs/Util/Increment IP Address.vi"/>
 					<Item Name="Convert to GUID.vi" Type="VI" URL="../subVIs/Util/Convert to GUID.vi"/>
 					<Item Name="Listbox Text Wrapper.vi" Type="VI" URL="../subVIs/Util/Listbox Text Wrapper.vi"/>
+					<Item Name="valid dotted ip.vi" Type="VI" URL="../subVIs/Util/valid dotted ip.vi"/>
 				</Item>
 				<Item Name="Version String" Type="Folder">
 					<Item Name="AutoIncrement Version String.vi" Type="VI" URL="../subVIs/Version String/AutoIncrement Version String.vi"/>
@@ -324,6 +325,7 @@
 			</Item>
 			<Item Name="rad_config.ini" Type="Document" URL="../rad_config.ini"/>
 		</Item>
+		<Item Name="create and send file.vi" Type="VI" URL="../subVIs/License/create and send file.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
@@ -430,11 +432,25 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
+				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
+				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
+			</Item>
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="IT-System__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/IT-System/IT-System__ZGTools.lvlib"/>
+				<Item Name="Zaphiro_LM__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/LM/core/Zaphiro_LM__ZGTools.lvlib"/>
+				<Item Name="IT-System-RT__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/IT-System/IT-System-RT__ZGTools.lvlib"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
