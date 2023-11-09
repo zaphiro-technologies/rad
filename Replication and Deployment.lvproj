@@ -316,6 +316,9 @@
 					<Item Name="add log.vi" Type="VI" URL="../subVIs/log/add log.vi"/>
 					<Item Name="make string one-line.vi" Type="VI" URL="../subVIs/log/make string one-line.vi"/>
 				</Item>
+				<Item Name="License" Type="Folder">
+					<Item Name="create and send file.vi" Type="VI" URL="../subVIs/License/create and send file.vi"/>
+				</Item>
 				<Item Name="rad_Button and Menu Status.vi" Type="VI" URL="../subVIs/rad_Button and Menu Status.vi"/>
 				<Item Name="rad_Globals.vi" Type="VI" URL="../subVIs/rad_Globals.vi"/>
 				<Item Name="rad_Load Config.vi" Type="VI" URL="../subVIs/rad_Load Config.vi"/>
@@ -325,7 +328,6 @@
 			</Item>
 			<Item Name="rad_config.ini" Type="Document" URL="../rad_config.ini"/>
 		</Item>
-		<Item Name="create and send file.vi" Type="VI" URL="../subVIs/License/create and send file.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
