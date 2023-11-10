@@ -320,6 +320,9 @@
 				<Item Name="License" Type="Folder">
 					<Item Name="create and send file.vi" Type="VI" URL="../subVIs/License/create and send file.vi"/>
 				</Item>
+				<Item Name="webdav" Type="Folder">
+					<Item Name="get folder total size.vi" Type="VI" URL="../subVIs/webdav/get folder total size.vi"/>
+				</Item>
 				<Item Name="rad_Button and Menu Status.vi" Type="VI" URL="../subVIs/rad_Button and Menu Status.vi"/>
 				<Item Name="rad_Globals.vi" Type="VI" URL="../subVIs/rad_Globals.vi"/>
 				<Item Name="rad_Load Config.vi" Type="VI" URL="../subVIs/rad_Load Config.vi"/>
@@ -329,7 +332,6 @@
 			</Item>
 			<Item Name="rad_config.ini" Type="Document" URL="../rad_config.ini"/>
 		</Item>
-		<Item Name="get folder total size.vi" Type="VI" URL="../subVIs/webdav/get folder total size.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
@@ -440,6 +442,7 @@
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
+				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Zaphiro_LM__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/LM/core/Zaphiro_LM__ZGTools.lvlib"/>
