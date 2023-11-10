@@ -34,6 +34,7 @@
 			<Item Name="project" Type="Folder">
 				<Item Name="_Open VI FP.vi" Type="VI" URL="../project/_Open VI FP.vi"/>
 				<Item Name="Start RAD.vi" Type="VI" URL="../project/Start RAD.vi"/>
+				<Item Name="logo square.ico" Type="Document" URL="../project/logo square.ico"/>
 			</Item>
 			<Item Name="subVIs" Type="Folder">
 				<Item Name="App Images" Type="Folder">
@@ -328,6 +329,7 @@
 			</Item>
 			<Item Name="rad_config.ini" Type="Document" URL="../rad_config.ini"/>
 		</Item>
+		<Item Name="get folder total size.vi" Type="VI" URL="../subVIs/webdav/get folder total size.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
@@ -434,35 +436,34 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
-				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
-				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="IT-System__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/IT-System/IT-System__ZGTools.lvlib"/>
 				<Item Name="Zaphiro_LM__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/LM/core/Zaphiro_LM__ZGTools.lvlib"/>
+				<Item Name="IT-System__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/IT-System/IT-System__ZGTools.lvlib"/>
 				<Item Name="IT-System-RT__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/IT-System/IT-System-RT__ZGTools.lvlib"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="RAD Application" Type="EXE">
+			<Item Name="Zaphiro RaD Application" Type="EXE">
 				<Property Name="App_INI_aliasGUID" Type="Str">{7D14A81A-E53C-4998-B1C4-A9ACCEE9DDDE}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{AA07335B-8AD4-48AC-937C-281A67E33F5C}</Property>
 				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{3BE514FF-1FF4-400A-A73A-71161C9C329F}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">RAD Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Zaphiro RaD Application</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Builds/RAD</Property>
@@ -470,11 +471,11 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{486A52BE-31E2-4D34-8023-C82BB52A7B36}</Property>
 				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
 				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">RAD.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Builds/RAD/RAD.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">RaD.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Builds/RAD/RaD.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -482,7 +483,8 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Builds/RAD</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{52B5D797-D64A-4C78-93E5-1C3BFCAB7BD2}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/source/project/logo square.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{04106333-9B24-4244-B136-B5B19389B38B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Replication and Deployment Utility.vi</Property>
@@ -511,12 +513,12 @@
 				<Property Name="Source[6].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
 				<Property Name="TgtF_companyName" Type="Str">Zaphiro Technlogies SA</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">RAD Application with log</Property>
-				<Property Name="TgtF_internalName" Type="Str">RAD Application</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Zaphiro RaD Application with log</Property>
+				<Property Name="TgtF_internalName" Type="Str">Zaphiro RaD Application</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 Zaphiro Technlogies</Property>
 				<Property Name="TgtF_productName" Type="Str">Replication And Deployment Utility</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{E3B51CED-D1AB-4FB4-AB3B-5919B2F7418B}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">RAD.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">RaD.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RAD Installer" Type="Installer">
@@ -584,7 +586,7 @@
 				<Property Name="Source[0].File[2].tag" Type="Str">{AA07335B-8AD4-48AC-937C-281A67E33F5C}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">3</Property>
 				<Property Name="Source[0].name" Type="Str">RAD Application</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/RAD Application</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Zaphiro RaD Application</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="Source[2].dest" Type="Str">{034CC805-8227-43BF-9FA9-8889B7E771CD}</Property>
 				<Property Name="Source[2].name" Type="Str">Start RAD.vi</Property>
