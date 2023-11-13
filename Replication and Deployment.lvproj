@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="14008000">
+<Project Type="Project" LVVersion="20008000">
 	<Property Name="CCSymbols" Type="Str"></Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
@@ -30,14 +30,15 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Replication and Deployment Utility.vi" Type="VI" URL="../Replication and Deployment Utility.vi"/>
-		<Item Name="Replication and Deployment.aliases" Type="Document" URL="../Replication and Deployment.aliases"/>
 		<Item Name="source" Type="Folder">
 			<Item Name="project" Type="Folder">
 				<Item Name="_Open VI FP.vi" Type="VI" URL="../project/_Open VI FP.vi"/>
 				<Item Name="Start RAD.vi" Type="VI" URL="../project/Start RAD.vi"/>
+				<Item Name="logo square.ico" Type="Document" URL="../project/logo square.ico"/>
 			</Item>
 			<Item Name="subVIs" Type="Folder">
 				<Item Name="App Images" Type="Folder">
+					<Property Name="NI.SortType" Type="Int">0</Property>
 					<Item Name="Deploy App Images" Type="Folder">
 						<Item Name="RIOSystemReplication" Type="Folder">
 							<Item Name="Download Bitfile Dynamic.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/RIOSystemReplication/Download Bitfile Dynamic.vi"/>
@@ -47,15 +48,15 @@
 							<Item Name="Set RIO Device Settings Dynamic.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/RIOSystemReplication/Set RIO Device Settings Dynamic.vi"/>
 						</Item>
 						<Item Name="rad_Check Bitfile for AutoRun.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Bitfile for AutoRun.vi"/>
-						<Item Name="rad_Check Image RT-INI For AutoRun.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Image RT-INI For AutoRun.vi"/>
 						<Item Name="rad_Check Firmware.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Firmware.vi"/>
+						<Item Name="rad_Check IF LinuxRT.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check IF LinuxRT.vi"/>
+						<Item Name="rad_Check Image RT-INI For AutoRun.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check Image RT-INI For AutoRun.vi"/>
 						<Item Name="rad_Deploy All Bitfiles.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy All Bitfiles.vi"/>
 						<Item Name="rad_Deploy Application Image.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Application Image.vi"/>
 						<Item Name="rad_Deploy Image Wrapper_FB.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Image Wrapper_FB.vi"/>
 						<Item Name="rad_Deploy Images in Parallel.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Images in Parallel.vi"/>
 						<Item Name="rad_Deploy Images with Progress.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deploy Images with Progress.vi"/>
 						<Item Name="rad_Deployment Error Handler.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Deployment Error Handler.vi"/>
-						<Item Name="rad_Check IF LinuxRT.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Check IF LinuxRT.vi"/>
 						<Item Name="rad_Detect NIAuth.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Detect NIAuth.vi"/>
 						<Item Name="rad_Discover Bitfiles In Image Zip.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Discover Bitfiles In Image Zip.vi"/>
 						<Item Name="rad_Enable FPGA.vi" Type="VI" URL="../subVIs/App Images/Deploy App Images/rad_Enable FPGA.vi"/>
@@ -84,17 +85,17 @@
 						<Item Name="rad_Convert Item Strings to FPGA Properties.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Convert Item Strings to FPGA Properties.vi"/>
 						<Item Name="rad_Create AppImage Info File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Create AppImage Info File.vi"/>
 						<Item Name="rad_Create AppImage ZIP File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Create AppImage ZIP File.vi"/>
+						<Item Name="rad_Find App Img File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Find App Img File.vi"/>
 						<Item Name="rad_Get Image Save Location.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Get Image Save Location.vi"/>
 						<Item Name="rad_GetInstalledSoftware.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_GetInstalledSoftware.vi"/>
 						<Item Name="rad_Input App Image Properties Dialog.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Input App Image Properties Dialog.vi"/>
+						<Item Name="rad_Merge AppImage Properties.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Merge AppImage Properties.vi"/>
 						<Item Name="rad_Modify AppImage Files.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Modify AppImage Files.vi"/>
 						<Item Name="rad_PackageImage.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_PackageImage.vi"/>
 						<Item Name="rad_Retrieve Application Image From Target.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve Application Image From Target.vi"/>
 						<Item Name="rad_Retrieve Image Wrapper.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve Image Wrapper.vi"/>
 						<Item Name="rad_Retrieve RAD AppImage Properties from Target.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve RAD AppImage Properties from Target.vi"/>
 						<Item Name="rad_Retrieve SysCfg AppImage Properties from Target.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Retrieve SysCfg AppImage Properties from Target.vi"/>
-						<Item Name="rad_Merge AppImage Properties.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Merge AppImage Properties.vi"/>
-						<Item Name="rad_Find App Img File.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Find App Img File.vi"/>
 						<Item Name="rad_Select App Image Inheritance Dialog.vi" Type="VI" URL="../subVIs/App Images/Retrieve App Images/rad_Select App Image Inheritance Dialog.vi"/>
 					</Item>
 					<Item Name="TypeDefs" Type="Folder">
@@ -115,6 +116,7 @@
 					<Item Name="rad_Configure App Images Settings Dialog.vi" Type="VI" URL="../subVIs/App Images/rad_Configure App Images Settings Dialog.vi"/>
 					<Item Name="rad_Configure Application Image.vi" Type="VI" URL="../subVIs/App Images/rad_Configure Application Image.vi"/>
 					<Item Name="rad_Format Application Images Information.vi" Type="VI" URL="../subVIs/App Images/rad_Format Application Images Information.vi"/>
+					<Item Name="rad_FTP Check log folder size on Target.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Check log folder size on Target.vi"/>
 					<Item Name="rad_FTP Delete File Wrapper.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Delete File Wrapper.vi"/>
 					<Item Name="rad_FTP Get File Wrapper.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Get File Wrapper.vi"/>
 					<Item Name="rad_FTP Put File Wrapper.vi" Type="VI" URL="../subVIs/App Images/rad_FTP Put File Wrapper.vi"/>
@@ -296,6 +298,7 @@
 					<Item Name="Increment IP Address.vi" Type="VI" URL="../subVIs/Util/Increment IP Address.vi"/>
 					<Item Name="Convert to GUID.vi" Type="VI" URL="../subVIs/Util/Convert to GUID.vi"/>
 					<Item Name="Listbox Text Wrapper.vi" Type="VI" URL="../subVIs/Util/Listbox Text Wrapper.vi"/>
+					<Item Name="valid dotted ip.vi" Type="VI" URL="../subVIs/Util/valid dotted ip.vi"/>
 				</Item>
 				<Item Name="Version String" Type="Folder">
 					<Item Name="AutoIncrement Version String.vi" Type="VI" URL="../subVIs/Version String/AutoIncrement Version String.vi"/>
@@ -308,7 +311,17 @@
 					<Item Name="Set UnzipSelect File Date Time.vi" Type="VI" URL="../subVIs/Zip/Set UnzipSelect File Date Time.vi"/>
 					<Item Name="SetPathInZip.vi" Type="VI" URL="../subVIs/Zip/SetPathInZip.vi"/>
 					<Item Name="UnzipSelectFiles.vi" Type="VI" URL="../subVIs/Zip/UnzipSelectFiles.vi"/>
-					<Item Name="Open or Replace Zip File.vi" Type="VI" URL="../../rad_16_0_source/subVIs/Zip/Open or Replace Zip File.vi"/>
+					<Item Name="Open or Replace Zip File.vi" Type="VI" URL="../subVIs/Zip/Open or Replace Zip File.vi"/>
+				</Item>
+				<Item Name="log" Type="Folder">
+					<Item Name="add log.vi" Type="VI" URL="../subVIs/log/add log.vi"/>
+					<Item Name="make string one-line.vi" Type="VI" URL="../subVIs/log/make string one-line.vi"/>
+				</Item>
+				<Item Name="License" Type="Folder">
+					<Item Name="create and send file.vi" Type="VI" URL="../subVIs/License/create and send file.vi"/>
+				</Item>
+				<Item Name="webdav" Type="Folder">
+					<Item Name="get folder total size.vi" Type="VI" URL="../subVIs/webdav/get folder total size.vi"/>
 				</Item>
 				<Item Name="rad_Button and Menu Status.vi" Type="VI" URL="../subVIs/rad_Button and Menu Status.vi"/>
 				<Item Name="rad_Globals.vi" Type="VI" URL="../subVIs/rad_Globals.vi"/>
@@ -423,31 +436,49 @@
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="Stall Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Stall Data Flow.vim"/>
+				<Item Name="Delimited String to 1D String Array.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Delimited String to 1D String Array.vi"/>
+			</Item>
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="Zaphiro_LM__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/LM/core/Zaphiro_LM__ZGTools.lvlib"/>
+				<Item Name="IT-System__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/IT-System/IT-System__ZGTools.lvlib"/>
+				<Item Name="IT-System-RT__ZGTools.lvlib" Type="Library" URL="/&lt;userlib&gt;/Zaphiro/GTools/IT-System/IT-System-RT__ZGTools.lvlib"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="CRI Get Remote cRIO Backplane Info.vi" Type="VI" URL="/../&lt;userlib&gt;/_CRI/CRI Get Remote cRIO Backplane Info.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="RAD Application" Type="EXE">
+			<Item Name="Zaphiro RaD Application" Type="EXE">
 				<Property Name="App_INI_aliasGUID" Type="Str">{7D14A81A-E53C-4998-B1C4-A9ACCEE9DDDE}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{AA07335B-8AD4-48AC-937C-281A67E33F5C}</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{3BE514FF-1FF4-400A-A73A-71161C9C329F}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">RAD Application</Property>
-				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Zaphiro RaD Application</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Builds/RAD</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{486A52BE-31E2-4D34-8023-C82BB52A7B36}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
+				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">3</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
-				<Property Name="Destination[0].destName" Type="Str">RAD.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Builds/RAD/RAD.exe</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">RaD.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Builds/RAD/RaD.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -455,7 +486,8 @@
 				<Property Name="Destination[1].path" Type="Path">/C/Builds/RAD</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{95F44F49-C3F8-4B6F-8DBF-3267CEE3E099}</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/source/project/logo square.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{04106333-9B24-4244-B136-B5B19389B38B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Replication and Deployment Utility.vi</Property>
@@ -483,13 +515,14 @@
 				<Property Name="Source[6].itemID" Type="Ref">/My Computer/source/subVIs</Property>
 				<Property Name="Source[6].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
-				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">RAD Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">RAD Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 NI Systems Engineering</Property>
+				<Property Name="TgtF_companyName" Type="Str">Zaphiro Technlogies SA</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Zaphiro RaD Application with log</Property>
+				<Property Name="TgtF_internalName" Type="Str">Zaphiro RaD Application</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2023 Zaphiro Technlogies</Property>
 				<Property Name="TgtF_productName" Type="Str">Replication And Deployment Utility</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{E3B51CED-D1AB-4FB4-AB3B-5919B2F7418B}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">RAD.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">RaD.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RAD Installer" Type="Installer">
 				<Property Name="Destination[0].name" Type="Str">project</Property>
@@ -509,10 +542,10 @@
 				<Property Name="Destination[3].tag" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
 				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str"></Property>
-				<Property Name="DistPart[0].productID" Type="Str">{BFD30583-3F24-4A38-BC2E-91186A97BAB7}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2014</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{4722F14B-8434-468D-840D-2B0CD8CBD5EA}</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{BD841C5A-94E5-4DA5-9505-2B90212D19C1}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 f1</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{D84FC73F-D1E0-4C05-A30C-DB882CD1ABD8}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[1].productID" Type="Str">{9DAB9252-81A5-4578-A7EC-EC62002294D0}</Property>
 				<Property Name="DistPart[1].productName" Type="Str">NI System Configuration Runtime 16.0.0</Property>
@@ -525,12 +558,12 @@
 				<Property Name="INST_productName" Type="Str">NI Replication And Deployment Utility 16.0</Property>
 				<Property Name="INST_productVersion" Type="Str">16.0.0</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">14000000</Property>
+				<Property Name="InstSpecVersion" Type="Str">20018007</Property>
 				<Property Name="MSI_arpCompany" Type="Str">National Instruments</Property>
 				<Property Name="MSI_arpPhone" Type="Str">800-433-3488</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://www.ni.com/</Property>
 				<Property Name="MSI_distID" Type="Str">{52AD4A24-F514-43F7-9255-56027306A503}</Property>
-				<Property Name="MSI_osCheck" Type="Int">4</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{D7F8FDD3-3404-4289-BF88-38D3D5725D82}</Property>
 				<Property Name="MSI_windowMessage" Type="Str">This installer will place the Replication And Deployment Utility in the National Instruments folder and add a shortcut to the Start Menu.</Property>
 				<Property Name="MSI_windowTitle" Type="Str">Welcome to the NI Replication And Deployment Utility Installer</Property>
@@ -556,7 +589,7 @@
 				<Property Name="Source[0].File[2].tag" Type="Str">{AA07335B-8AD4-48AC-937C-281A67E33F5C}</Property>
 				<Property Name="Source[0].FileCount" Type="Int">3</Property>
 				<Property Name="Source[0].name" Type="Str">RAD Application</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/RAD Application</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Zaphiro RaD Application</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="Source[2].dest" Type="Str">{034CC805-8227-43BF-9FA9-8889B7E771CD}</Property>
 				<Property Name="Source[2].name" Type="Str">Start RAD.vi</Property>
