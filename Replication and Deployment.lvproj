@@ -301,14 +301,8 @@
 					<Item Name="Version Compatibility Check.vi" Type="VI" URL="../subVIs/Version String/Version Compatibility Check.vi"/>
 				</Item>
 				<Item Name="Zip" Type="Folder">
-					<Item Name="Close unZipSelect File.vi" Type="VI" URL="../subVIs/Zip/Close unZipSelect File.vi"/>
 					<Item Name="Delete Files from ZIP.vi" Type="VI" URL="../subVIs/Zip/Delete Files from ZIP.vi"/>
-					<Item Name="Open unZipSelect File.vi" Type="VI" URL="../subVIs/Zip/Open unZipSelect File.vi"/>
-					<Item Name="Set UnzipSelect File Date Time.vi" Type="VI" URL="../subVIs/Zip/Set UnzipSelect File Date Time.vi"/>
-					<Item Name="SetPathInZip.vi" Type="VI" URL="../subVIs/Zip/SetPathInZip.vi"/>
-					<Item Name="UnzipSelectFiles.vi" Type="VI" URL="../subVIs/Zip/UnzipSelectFiles.vi"/>
 					<Item Name="Open or Replace Zip File.vi" Type="VI" URL="../subVIs/Zip/Open or Replace Zip File.vi"/>
-					<Item Name="UnzipSelectFiles-b.vi" Type="VI" URL="../subVIs/Zip/UnzipSelectFiles-b.vi"/>
 				</Item>
 				<Item Name="pmu license" Type="Folder">
 					<Item Name="CreateLicenseKeyPC.vi" Type="VI" URL="../subVIs/pmu license/CreateLicenseKeyPC.vi"/>
@@ -519,7 +513,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.so" Type="Document" URL="/&lt;resource&gt;/lvanlys.so"/>
-			<Item Name="Open unZipSelect File-b.vi" Type="VI" URL="../subVIs/Zip/Open unZipSelect File-b.vi"/>
 			<Item Name="nisyscfg.so" Type="Document" URL="nisyscfg.so">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
