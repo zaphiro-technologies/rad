@@ -31,7 +31,6 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Replication and Deployment Utility.vi" Type="VI" URL="../Replication and Deployment Utility.vi"/>
-		<Item Name="Replication and Deployment.aliases" Type="Document" URL="../Replication and Deployment.aliases"/>
 		<Item Name="source" Type="Folder">
 			<Item Name="project" Type="Folder">
 				<Item Name="_Open VI FP.vi" Type="VI" URL="../project/_Open VI FP.vi"/>
@@ -301,14 +300,8 @@
 					<Item Name="Version Compatibility Check.vi" Type="VI" URL="../subVIs/Version String/Version Compatibility Check.vi"/>
 				</Item>
 				<Item Name="Zip" Type="Folder">
-					<Item Name="Close unZipSelect File.vi" Type="VI" URL="../subVIs/Zip/Close unZipSelect File.vi"/>
 					<Item Name="Delete Files from ZIP.vi" Type="VI" URL="../subVIs/Zip/Delete Files from ZIP.vi"/>
-					<Item Name="Open unZipSelect File.vi" Type="VI" URL="../subVIs/Zip/Open unZipSelect File.vi"/>
-					<Item Name="Set UnzipSelect File Date Time.vi" Type="VI" URL="../subVIs/Zip/Set UnzipSelect File Date Time.vi"/>
-					<Item Name="SetPathInZip.vi" Type="VI" URL="../subVIs/Zip/SetPathInZip.vi"/>
-					<Item Name="UnzipSelectFiles.vi" Type="VI" URL="../subVIs/Zip/UnzipSelectFiles.vi"/>
 					<Item Name="Open or Replace Zip File.vi" Type="VI" URL="../subVIs/Zip/Open or Replace Zip File.vi"/>
-					<Item Name="UnzipSelectFiles-b.vi" Type="VI" URL="../subVIs/Zip/UnzipSelectFiles-b.vi"/>
 				</Item>
 				<Item Name="pmu license" Type="Folder">
 					<Item Name="CreateLicenseKeyPC.vi" Type="VI" URL="../subVIs/pmu license/CreateLicenseKeyPC.vi"/>
@@ -519,7 +512,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.so" Type="Document" URL="/&lt;resource&gt;/lvanlys.so"/>
-			<Item Name="Open unZipSelect File-b.vi" Type="VI" URL="../subVIs/Zip/Open unZipSelect File-b.vi"/>
 			<Item Name="nisyscfg.so" Type="Document" URL="nisyscfg.so">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -533,48 +525,43 @@
 				<Property Name="Bld_buildSpecName" Type="Str">RAD Application</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Builds/RAD</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/RAD Application</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{486A52BE-31E2-4D34-8023-C82BB52A7B36}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">55</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">RAD.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Builds/RAD/RAD.exe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RAD Application/RAD.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">/C/Builds/RAD</Property>
-				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="SourceCount" Type="Int">7</Property>
-				<Property Name="Source[0].itemID" Type="Str">{95F44F49-C3F8-4B6F-8DBF-3267CEE3E099}</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/RAD Application/data</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
+				<Property Name="Source[0].itemID" Type="Str">{70CC0411-7CAB-11EF-B351-000C29CDAB89}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Replication and Deployment Utility.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/source/subVIs/App Images/Deploy App Images/RIOSystemReplication/Set RIO Device Settings 2010.vi</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[3].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/source/subVIs/App Images/Deploy App Images/RIOSystemReplication/Set RIO Device Settings 2010.vi</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/source/subVIs/Util/Progress Popup</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="Source[4].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
 				<Property Name="Source[4].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/source/subVIs/Util/Progress Popup</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/source/rad_config.ini</Property>
 				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[4].type" Type="Str">Container</Property>
-				<Property Name="Source[5].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/source/rad_config.ini</Property>
-				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[6].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/source/subVIs</Property>
-				<Property Name="Source[6].type" Type="Str">Container</Property>
+				<Property Name="Source[5].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/source/subVIs</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">RAD Application</Property>
 				<Property Name="TgtF_internalName" Type="Str">RAD Application</Property>
