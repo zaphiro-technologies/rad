@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="20008000">
+<Project Type="Project" LVVersion="21008000">
 	<Property Name="CCSymbols" Type="Str"></Property>
 	<Property Name="NI.LV.All.SaveVersion" Type="Str">20.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
@@ -432,7 +432,6 @@
 				<Item Name="ZLIB Extract All Files To Dir (Path)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/lvzip.llb/subVI/ZLIB Extract All Files To Dir (Path)__ogtk.vi"/>
 				<Item Name="FILE Create Wide Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/fileutil.llb/FILE Create Wide Path__ogtk.vi"/>
 				<Item Name="FILE Create Wide Path (Path)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/fileutil.llb/subVIs/FILE Create Wide Path (Path)__ogtk.vi"/>
-				<Item Name="lvzlib64.so" Type="Document" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/lvzlib64.so"/>
 				<Item Name="PATH Refnum__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/fileutil.llb/PATH Refnum__ogtk.ctl"/>
 				<Item Name="FILE Create Wide Path (UTF8)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/fileutil.llb/subVIs/FILE Create Wide Path (UTF8)__ogtk.vi"/>
 				<Item Name="FILE Get Type__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/fileutil.llb/FILE Get Type__ogtk.vi"/>
@@ -507,14 +506,16 @@
 				<Item Name="FILE Convert Wide Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/fileutil.llb/FILE Convert Wide Path__ogtk.vi"/>
 				<Item Name="FILE Convert Wide Path (Path)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/fileutil.llb/subVIs/FILE Convert Wide Path (Path)__ogtk.vi"/>
 				<Item Name="ZLIB Enumerate File Contents__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/lvzip.llb/ZLIB Enumerate File Contents__ogtk.vi"/>
-			</Item>
-			<Item Name="DOMUserDefRef.so" Type="Document" URL="DOMUserDefRef.so">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+				<Item Name="lvzlib.dll" Type="Document" URL="/&lt;userlib&gt;/_OpenG.lib/lvzip/lvzlib.dll"/>
 			</Item>
 			<Item Name="lvanlys.so" Type="Document" URL="/&lt;resource&gt;/lvanlys.so"/>
 			<Item Name="nisyscfg.so" Type="Document" URL="nisyscfg.so">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="RAD Application" Type="EXE">
@@ -532,14 +533,13 @@
 				<Property Name="Bld_version.build" Type="Int">55</Property>
 				<Property Name="Bld_version.major" Type="Int">16</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">RAD.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/RAD Application/RAD.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/RAD Application/data</Property>
-				<Property Name="SourceCount" Type="Int">6</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].itemID" Type="Str">{70CC0411-7CAB-11EF-B351-000C29CDAB89}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
@@ -562,6 +562,7 @@
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[5].itemID" Type="Ref">/My Computer/source/subVIs</Property>
 				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">RAD Application</Property>
 				<Property Name="TgtF_internalName" Type="Str">RAD Application</Property>
@@ -571,7 +572,6 @@
 				<Property Name="TgtF_targetfileName" Type="Str">RAD.exe</Property>
 			</Item>
 			<Item Name="RAD Installer" Type="Installer">
-				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="Destination[0].name" Type="Str">project</Property>
 				<Property Name="Destination[0].parent" Type="Str">{E20B5188-6575-4366-9109-D4EA9AB7500C}</Property>
 				<Property Name="Destination[0].tag" Type="Str">{034CC805-8227-43BF-9FA9-8889B7E771CD}</Property>
@@ -588,23 +588,24 @@
 				<Property Name="Destination[3].parent" Type="Str">{28B5F8BB-E694-489C-A4EB-EB638E22C528}</Property>
 				<Property Name="Destination[3].tag" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
 				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
-				<Property Name="DistPartCount" Type="Int">2</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{916F203A-A871-4414-AA45-518E1048071C}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2021 SP1 f1</Property>
+				<Property Name="DistPart[0].productID" Type="Str">{B8414051-A88F-4BCE-B52F-C39D743F67B3}</Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2021 SP1 f6</Property>
 				<Property Name="DistPart[0].upgradeCode" Type="Str">{251E8668-4013-3671-857C-61D46B2AC827}</Property>
 				<Property Name="DistPart[1].flavorID" Type="Str">DefaultFull</Property>
 				<Property Name="DistPart[1].productID" Type="Str">{9DAB9252-81A5-4578-A7EC-EC62002294D0}</Property>
 				<Property Name="DistPart[1].productName" Type="Str">NI System Configuration Runtime 16.0.0</Property>
 				<Property Name="DistPart[1].upgradeCode" Type="Str">{0E192465-CC28-4C84-BE81-710B71C595A3}</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">21018001</Property>
+				<Property Name="DistPartCount" Type="Int">2</Property>
 				<Property Name="INST_author" Type="Str">NI</Property>
 				<Property Name="INST_buildLocation" Type="Path">/C/builds/RAD2</Property>
 				<Property Name="INST_buildSpecName" Type="Str">RAD Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
 				<Property Name="INST_productName" Type="Str">NI Replication And Deployment Utility 16.0</Property>
 				<Property Name="INST_productVersion" Type="Str">16.0.0</Property>
+				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">21018006</Property>
 				<Property Name="MSI_arpCompany" Type="Str">National Instruments</Property>
 				<Property Name="MSI_arpPhone" Type="Str">800-433-3488</Property>
 				<Property Name="MSI_arpURL" Type="Str">http://www.ni.com/</Property>
@@ -613,19 +614,17 @@
 				<Property Name="MSI_upgradeCode" Type="Str">{D7F8FDD3-3404-4289-BF88-38D3D5725D82}</Property>
 				<Property Name="MSI_windowMessage" Type="Str">This installer will place the Replication And Deployment Utility in the National Instruments folder and add a shortcut to the Start Menu.</Property>
 				<Property Name="MSI_windowTitle" Type="Str">Welcome to the NI Replication And Deployment Utility Installer</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
 				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
 				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
 				<Property Name="Source[0].dest" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">3</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
 				<Property Name="Source[0].File[0].name" Type="Str">RAD.exe</Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">RAD Utility</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">NI Replication And Deployment</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{E3B51CED-D1AB-4FB4-AB3B-5919B2F7418B}</Property>
 				<Property Name="Source[0].File[1].attributes" Type="Int">2</Property>
 				<Property Name="Source[0].File[1].dest" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
@@ -635,6 +634,7 @@
 				<Property Name="Source[0].File[2].dest" Type="Str">{3376BF9B-9AE9-41ED-ABCE-050647E35E81}</Property>
 				<Property Name="Source[0].File[2].name" Type="Str">RAD.ini</Property>
 				<Property Name="Source[0].File[2].tag" Type="Str">{AA07335B-8AD4-48AC-937C-281A67E33F5C}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">3</Property>
 				<Property Name="Source[0].name" Type="Str">RAD Application</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/RAD Application</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
@@ -642,6 +642,7 @@
 				<Property Name="Source[2].name" Type="Str">Start RAD.vi</Property>
 				<Property Name="Source[2].tag" Type="Ref">/My Computer/5.5/source/project/Start RAD.vi</Property>
 				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
 		</Item>
 	</Item>
