@@ -1,2 +1,4 @@
 ﻿*.aliases
 *.lvlps
+*.lvappimg
+.Replication and Deployment.UserState/debug.lvprojstate
